@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "210119527343",
+    "firebase_url": "https://yogaapp-2211-default-rtdb.firebaseio.com",
+    "project_id": "yogaapp-2211",
+    "storage_bucket": "yogaapp-2211.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210119527343:android:a07937574024ae80583d5a",
+        "android_client_info": {
+          "package_name": "com.example.yoga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210119527343-jgf806kqt8ltgh793ln6l1ua72r2qs3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yoga",
+            "certificate_hash": "17fe18fee38ba97933b4b8e93dfe730a1bf7ae46"
+          }
+        },
+        {
+          "client_id": "210119527343-os28a2hoku2uj0e1p4o8gie2f7m2c0el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV0rpibFzbx0lCoG8aVEjc-O2fFoTlvWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210119527343-os28a2hoku2uj0e1p4o8gie2f7m2c0el.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210119527343:android:aa1ca82cd418b2fa583d5a",
+        "android_client_info": {
+          "package_name": "com.example.yogaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210119527343-os28a2hoku2uj0e1p4o8gie2f7m2c0el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV0rpibFzbx0lCoG8aVEjc-O2fFoTlvWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210119527343-os28a2hoku2uj0e1p4o8gie2f7m2c0el.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

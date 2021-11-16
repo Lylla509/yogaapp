@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Trang chủ"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/processFragment"
+        android:title="Bài tập"
+        android:icon="@drawable/ic_process"/>
+    <item
+        android:id="@+id/networkFragment"
+        android:title="Kết nối"
+        android:icon="@drawable/ic_network"/>
+    <item
+        android:id="@+id/calendarFragment"
+        android:title="Theo dõi"
+        android:icon="@drawable/ic_calendar"/>
+    <item
+        android:id="@+id/inforFragment"
+        android:title="Cá nhân"
+        android:icon="@drawable/ic_infor"/>
+</menu>

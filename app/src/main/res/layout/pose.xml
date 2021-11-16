@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingTop="19dp">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:id="@+id/img_back"
+                >
+
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Tư thế"></TextView>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                    </androidx.viewpager.widget.ViewPager>
+                    <TextView
+                        android:background="@color/white"
+                        android:id="@+id/tv_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Tên thư thế"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        >
+                        <TextView
+                            android:background="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginTop="3dp"
+                            android:paddingLeft="15dp"
+                            android:gravity="left"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:text="Thuộc thế tập: : "></TextView>
+                        <TextView
+                            android:background="@color/white"
+                            android:id="@+id/tv_categories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginTop="3dp"
+                            android:paddingLeft="10dp"
+                            android:gravity="left"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:text="thế tập"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:background="@color/white">
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="left"
+                            android:textStyle="bold"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/black"
+                            android:text="Chú ý"
+                            tools:ignore="DuplicateIds"
+                            ></TextView>
+                        <TextView
+                            android:id="@+id/tv_des_product"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="left"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:text="Chú ý"
+                            tools:ignore="DuplicateIds"></TextView>
+                    </LinearLayout>
+                    <TextView
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Các bước thực hiện"></TextView>
+                    <TextView
+                            android:id="@+id/tv_des_product"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="left"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:text="các bước"
+                            tools:ignore="DuplicateIds"></TextView>
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+</LinearLayout>
