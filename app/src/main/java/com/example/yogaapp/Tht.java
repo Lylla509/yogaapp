@@ -1,27 +1,31 @@
 package com.example.yogaapp;
 
 public class Tht {
-    public String idTht;
-    public String nameTht;
+    public String id;
+    public String name;
 
-    public Tht(String idTht, String nameTht) {
-        this.idTht = idTht;
-        this.nameTht = nameTht;
+
+    public Tht(){
     }
 
-    public String getIdTht() {
-        return idTht;
+    public Tht(String id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
-    public void setIdTht(String idTht) {
-        this.idTht = idTht;
+    public String getId() {
+        return id;
     }
 
-    public String getNameTht() {
-        return nameTht;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public void setNameTht(String nameTht) {
-        this.nameTht = nameTht;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

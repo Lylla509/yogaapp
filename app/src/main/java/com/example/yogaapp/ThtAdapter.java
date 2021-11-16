@@ -29,14 +29,18 @@ public class ThtAdapter extends RecyclerView.Adapter<ThtAdapter.ThtViewHolder> {
     public void onBindViewHolder(@NonNull ThtViewHolder holder, int position) {
 
         Tht tht = mthtList.get(position);
-        if (tht == null){return;}
-        holder.txtidTht.setText("ID" + tht.getIdTht());
-        holder.txtnameTht.setText("Name" + tht.getNameTht());
+        if (tht == null){
+            return;
+        }
+        holder.txtidTht.setText("id" + tht.getId());
+        holder.txtnameTht.setText("name" + tht.getName());
     }
 
     @Override
     public int getItemCount() {
-        if (mthtList !=null){return mthtList.size();}
+        if (mthtList !=null){
+            return mthtList.size();
+        }
         return 0;
     }
 

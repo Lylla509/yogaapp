@@ -54,8 +54,6 @@ public class ProcessFragment extends Fragment {
     private List<Tht> mListTht;//
     GridView gridView;
 
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference mref = database.getReference("Poses");
 
 
 
@@ -115,6 +113,9 @@ public class ProcessFragment extends Fragment {
     }
 
     //
+
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference mref = database.getReference("Poses");
     private void getTht(){
         rcv_tht = mView.findViewById(R.id.rcv_tht);//
         mListTht = new ArrayList<>();
@@ -128,10 +129,12 @@ public class ProcessFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 System.out.println(snapshot);
-                if(mListTht.size() > 0) {mListTht.clear();}
+                if(mListTht.size() > 0) {
+                    mListTht.clear();
+                }
                 for (DataSnapshot dataSnapshot: snapshot.getChildren()){
                     Tht tht = dataSnapshot.getValue(Tht.class);
-                    mListTht.add(new Tht(tht.getIdTht(), tht.getNameTht()));//
+                    mListTht.add(new Tht(tht.getId(), tht.getName()));//
             }
                 //System.out.println(snapshot);
                 mthtAdapter.notifyDataSetChanged();
