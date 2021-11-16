@@ -129,20 +129,15 @@ public class ProcessFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 System.out.println(snapshot);
                 if(mListTht.size() > 0) {mListTht.clear();}
-
                 for (DataSnapshot dataSnapshot: snapshot.getChildren()){
                     Tht tht = dataSnapshot.getValue(Tht.class);
                     mListTht.add(new Tht(tht.getIdTht(), tht.getNameTht()));//
-
-                }
+            }
                 //System.out.println(snapshot);
-
                 mthtAdapter.notifyDataSetChanged();
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
         rcv_tht.setAdapter(mthtAdapter);
